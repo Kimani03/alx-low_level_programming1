@@ -1,4 +1,4 @@
-#include "alx"
+#include "putchar.h"
 /**
  * main - Entry point
  *
