@@ -1,27 +1,24 @@
 #include "main.h"
-
 /**
- * print_square - a function that prints a square, followed by a new line
- * @size: size of both width and length
- * Return: a square made of '#'
+ * jack_bauer - function that prints every minute of the day, 24 hour clock
+ * h = hour, m = minutes
+ * / 10 allows second digit to rotate
+ * for loop breaks before passing 24:00
+ * Return: 24 hour clock line by line
  */
-void print_square(int size)
+void jack_bauer(void)
 {
-	int co, ro;
+	int h, m;
 
-	if (size <= 0)
+	for (h = 0; h < 24; h++)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (co = 1; co <= size; co++)
+		for (m = 0; m < 60; m++)
 		{
-			_putchar('#');
-			for (ro = 2; ro <= size; ro++)
-			{
-				_putchar('#');
-			}
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
 			_putchar('\n');
 		}
 	}
