@@ -1,1 +1,3 @@
-Copy this main file. Comment out (don’t delete it!) the part of the code that is causing the output to go into an infinite loop.
+debugging is the process of finding and resolving bugs (defects or problems that prevent correct operation) within computer programs, software, or systems.
+
+
