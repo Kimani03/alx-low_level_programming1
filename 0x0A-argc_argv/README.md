@@ -1,1 +1,1 @@
-This is a readme argument.
+Write a program that prints its name, followed by a new line.
