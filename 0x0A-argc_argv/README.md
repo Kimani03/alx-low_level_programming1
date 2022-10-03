@@ -1,1 +1,1 @@
-Write a program that prints its name, followed by a new line.
+introduction to command line arguments argc and argv[]
