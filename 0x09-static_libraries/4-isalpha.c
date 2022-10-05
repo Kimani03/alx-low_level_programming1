@@ -1,31 +1,13 @@
 #include "main.h"
 /**
-*_strspn - search the number of bytes in the initial
-* segment of s which consist only of bytes from accept
-*@s:segment targeted
-*@accept:reference bytes container
-*
-*Return:returns the number of bytes in the initial
-* segment of s which consist only of bytes from accept
+*_isalpha - controls if a character is alphabetical
+*@c: character to be verified
+*Return: return 0 or 1
 */
-unsigned int _strspn(char *s, char *accept)
+int _isalpha(int c)
 {
-	unsigned int bytes = 0;
-	int i;
+if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+return (1);
 
-	while (*s)
-	{
-		for (i = 0; accept[i]; i++)
-		{
-			if (accept[i] == *s)
-			{
-				bytes++;
-				break;
-			}
-			else if ((accept[i + 1]) == '\0')
-				return (bytes);
-		}
-		s++;
-	}
-	return (bytes);
+return (0);
 }
