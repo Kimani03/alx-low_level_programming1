@@ -1,4 +1,4 @@
-nclude "function_pointers.h"
+#include "function_pointers.h"
 /**
    * array_iterator - this functions iterates an array
    (* a blank line
