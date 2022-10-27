@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -6,6 +7,7 @@
   * @h: list to print elements of
   * Return: size_t of the list
   */
+
 size_t print_listint(const listint_t *h)
 {
 	size_t n = 0;
